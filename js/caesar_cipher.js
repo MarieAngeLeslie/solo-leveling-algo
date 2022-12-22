@@ -7,10 +7,10 @@ const caesar = (str, shift) => {
     for (let i = 0; i < str.length; i++) {
         ascii_code = str.charCodeAt(i);
         if (ascii_code + shift > last_lowcase_alphabet_ascii_code) {
-            num1 = last_lowcase_alphabet_ascii_code - ascii_code;
-            num2 = total_alphabet_number - num1;
-            num = (num2 + shift) % total_alphabet_number;
-            caesar = caesar + String.fromCharCode(num + count_before_lowercase_charater__a);
+            diff = last_lowcase_alphabet_ascii_code - ascii_code;
+            real_pos = total_alphabet_number - diff;
+            caesar_character_pos = (real_pos + shift) % total_alphabet_number;
+            caesar = caesar + String.fromCharCode(caesar_character_pos + count_before_lowercase_charater__a);
         } else {
             caesar = caesar + String.fromCharCode(ascii_code + shift)
         }
