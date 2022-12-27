@@ -23,7 +23,7 @@ const nanogram_row = (array) => {
 
     }
 };
-let _array = [1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0];
+let _array = [1, 1, 0, 1, 0, 0, 0, 0, 0];
 nanogram_row(_array);
 console.log(_array);
 console.log('result of nanogram :');
