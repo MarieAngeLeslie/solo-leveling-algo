@@ -9,10 +9,10 @@ while (iterator != 26) {
     console.log(previous_sequence);
 
 
-
     // Print one character in single line
     // for (let i = 0; i < previous_sequence.length; i++) {
-    //     console.log(previous_sequence[i]);
+    //      console.log(previous_sequence[i]);
+    //      console.log('\n');
     // }
-    // TAKING TOO TOO MUCH FOR EXECUTION
+    // TAKING TOO TOO MUCH TIME FOR EXECUTION
 }
